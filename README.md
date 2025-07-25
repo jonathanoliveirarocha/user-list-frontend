@@ -159,7 +159,7 @@ Projeto disponível em [https://userlistfrontend.vercel.app/](https://userlistfr
 
 ## ⏱️ Tempo de Desenvolvimento
 
-**Tempo total investido**: Aproximadamente 2.5 horas
+**Tempo total investido**: Aproximadamente 2 horas e 30 minutos.
 
 ## 🤔 Decisões Técnicas
 
