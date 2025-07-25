@@ -51,11 +51,6 @@ export default function UserList() {
         setCurrentPage(1)
     }
 
-    const handlePageChange = (page: number) => {
-        if (page < 1 || page > totalPages) return
-        setCurrentPage(page)
-    }
-
     if (loading || showSkeleton) {
         return (
             <div className="space-y-6">
