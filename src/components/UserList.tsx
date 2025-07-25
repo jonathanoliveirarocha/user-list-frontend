@@ -3,7 +3,7 @@ import { useUsers } from '../hooks/useUsers'
 import { useUserContext } from '../contexts/UserContext'
 import UserCard from '../components/UserCard'
 import SearchBar from '../components/SearchBar'
-import Pagination from './Pagination'
+import Pagination from '../components/Pagination'
 import ErrorMessage from '../components/ErrorMessage'
 import Skeleton from './CardSkeleton'
 
@@ -86,11 +86,7 @@ export default function UserList() {
             )}
 
             {totalPages > 1 && (
-                <Pagination
-                    currentPage={currentPage}
-                    totalPages={totalPages}
-                    onPageChange={handlePageChange}
-                />
+                <Pagination />
             )}
         </div>
     )
