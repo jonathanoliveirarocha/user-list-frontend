@@ -65,7 +65,7 @@ Projeto disponível em [https://userlistfrontend.vercel.app/](https://userlistfr
 ```
 2. **Navegue até a pasta do projeto**
 ```bash
-  cd relate
+  cd user-list-frontend
 ```
 
 3. **Instale as dependências**
@@ -120,6 +120,7 @@ Projeto disponível em [https://userlistfrontend.vercel.app/](https://userlistfr
 - **Grid Responsivo**: Layout que se adapta ao tamanho da tela
 
 ### UX Features
+- **Imagens e Cores**: da Paciente 360, para um design bonito e moderno 
 - **Loading States**: Feedback visual durante carregamento
 - **Error Handling**: Tratamento elegante de erros
 - **Empty States**: Mensagens informativas quando não há dados
