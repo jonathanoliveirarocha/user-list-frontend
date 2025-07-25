@@ -13,7 +13,6 @@ export default function UserList() {
         currentPage,
         setCurrentPage,
         usersPerPage,
-        setTotalUsers,
         setFilteredUsersCount
     } = useUserContext()
 
