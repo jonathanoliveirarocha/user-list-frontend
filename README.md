@@ -73,7 +73,12 @@ Projeto disponível em [https://userlistfrontend.vercel.app/](https://userlistfr
   npm install
 ```
 
-4. **Acesse a aplicação**
+5. **Execute o projeto**
+```bash
+  npm run dev
+```
+
+5. **Acesse a aplicação**
    
    Abra [http://localhost:5174](http://localhost:5174) no seu navegador
 
