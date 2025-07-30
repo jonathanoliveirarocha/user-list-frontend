@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import type { User } from '../types/user'
 import { useUserContext } from '../contexts/UserContext'
+import { fetchUsers } from '../api/userApi'
 
 export function useUsers() {
     const [users, setUsers] = useState<User[]>([])
@@ -11,11 +12,10 @@ export function useUsers() {
     const { setTotalUsers, setFilteredUsersCount } = useUserContext()
 
     useEffect(() => {
-        async function fetchUsers() {
+        async function loadUsers() {
             try {
                 setLoading(true)
-                const res = await fetch('https://jsonplaceholder.typicode.com/users')
-                const data: User[] = await res.json()
+                const data = await fetchUsers() 
                 setUsers(data)
                 setTotalUsers(data.length)
                 setFilteredUsersCount(data.length)
@@ -26,7 +26,7 @@ export function useUsers() {
             }
         }
 
-        fetchUsers()
+        loadUsers()
     }, [setTotalUsers, setFilteredUsersCount])
 
     return { users, loading, error, searchTerm, setSearchTerm }
