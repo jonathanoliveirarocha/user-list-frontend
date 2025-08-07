@@ -87,7 +87,7 @@ Projeto disponível em [https://userlistfrontend.vercel.app/](https://userlistfr
 ## 🏗️ Estrutura do Projeto
 
 ```bash
-📁 src                          # Diretório principal da aplicação
+📁 src                         # Diretório principal da aplicação
 ├── 📁 api                     # Contém serviços e chamadas à API externa
 │   └── userApi.ts             # Funções para buscar dados dos usuários na API JSONPlaceholder
 ├── 📁 assets                  # Recursos estáticos como imagens e ícones
